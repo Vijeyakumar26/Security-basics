@@ -11,4 +11,16 @@ public class BasicController {
     {
         return "Welcome with Security!";
     }
+
+    @GetMapping(path = "/admin")
+    public String admin()
+    {
+        return "Welcome Admin !";
+    }
+
+    @GetMapping(path = "/user")
+    public String user()
+    {
+        return "Welcome user !";
+    }
 }
